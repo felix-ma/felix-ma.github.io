@@ -1,14 +1,14 @@
 {
-    "name": "poslua-blog",
-    "title": "Poslua Blog",
-    "author": "Poslua <ms2008vip@gmail.com>",
-    "version": "1.7.0",
-    "homepage": "http://ms2008.github.io",
+    "name": "felix-blog",
+    "title": "Felix.ma Blog",
+    "author": "Felix <1374147274@qq.com>",
+    "version": "1.0.0",
+    "homepage": "https://felix-ma.github.io/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/ms2008/ms2008.github.io"
+        "url": "https://github.com/felix-ma/felix-ma.github.io.git"
     },
-    "bugs": "https://github.com/ms2008/ms2008.github.io/issues",
+    "bugs": "https://github.com/felix-ma/felix-ma.github.io.git/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
