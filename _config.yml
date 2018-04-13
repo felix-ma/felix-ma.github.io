@@ -1,12 +1,12 @@
 # Site settings
 title: Felix Blog
-SEOTitle: felix博客 | Felix Blog
+SEOTitle: felix | Felix Blog
 header-img: img/home-bg.jpg
 email: 1374147274@qq.com
-description: "Cool Blog"
-keyword: ""
+description: "关于 Lua, OpenResty | poslua, linux, 性能, 安全, 计算机技术"
+keyword: "poslua, Lua, LuaJIT, OpenResty, Python, Golang, Linux, Web, 互联网"
 url: "https://felix-ma.github.io"              # your host, for absolute URL
-baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
@@ -58,14 +58,14 @@ netease_comment: false
 #ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-117503250-1'            # Format: UA-xxxxxx-xx
-ga_domain: auto
+ga_domain: felix-ma.github.io
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-ms2008.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -85,16 +85,22 @@ friends: [
         title: "Hux Blog",
         href: "http://huangxuan.me"
     },{
-        title: "Foo",
-        href: "#"
+        title: "poslua",
+        href: "http://ms2008.github.io"
     },{
-        title: "Bar",
-        href: "#"
+        title: "OpenResty",
+        href: "https://openresty.org/en/"
     },{
-        title: "Example Friends",
-        href: "#"
+        title: "Lor",
+        href: "http://lor.sumory.com/"
     },{
-        title: "It helps SEO",
-        href: "#"
+        title: "LuaJIT",
+        href: "http://luajit.org/"
+    },{
+        title: "Python",
+        href: "https://www.python.org/"
+    },{
+        title: "Golang",
+        href: "https://golang.org/"
     }
 ]
