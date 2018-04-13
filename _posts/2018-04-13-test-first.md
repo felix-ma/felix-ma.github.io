@@ -16,7 +16,7 @@ tags:
 test
 ```
 
-![](/img/in-post/redis-rate-limit.png)
+![](/img/post-bg-rwd.jpg)
 
 [test][1]
 

@@ -1,17 +1,13 @@
 ---
 layout:       post
-title:        "饿了么的 PWA 升级实践"
-subtitle:     "Upgrading Ele.me to Progressive Web App"
-date:         2017-07-12 12:00:00
-author:       "Hux"
-header-img:   "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
-header-mask:  0.3
+title:        "右侧catalog测试"
+subtitle:     "快速导航"
+date:         2018-04-14 00:40:00
+author:       "felix"
+header-img:   "img/post-bg-os-metro.jpg"
 catalog:      true
-multilingual: true
 tags:
-    - 前端开发
-    - JavaScript
-    - PWA
+    - Test
 ---
 
 ## 多页应用、Vue、PWA？
