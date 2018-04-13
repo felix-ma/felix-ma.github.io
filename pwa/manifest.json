@@ -1,13 +1,13 @@
 {
-  "name": "Poslua Blog",
-  "short_name": "Poslua Blog",
-  "description": "About an engineer & architect who loves web.",
+  "name": "马子超 | Felix Blog",
+  "short_name": "Felix Blog",
+  "description": "个人博客",
   "icons": [{
-    "src": "icons/128.png",
+    "src": "icons/128icon.png",
     "sizes": "128x128",
     "type": "image/png"
   }, {
-    "src": "icons/512.png",
+    "src": "icons/512icon.png",
     "sizes": "512x512",
     "type": "image/png"
   }],
