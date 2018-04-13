@@ -6,7 +6,7 @@ email: 1374147274@qq.com
 description: "Cool Blog"
 keyword: ""
 url: "https://felix-ma.github.io"              # your host, for absolute URL
-baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
