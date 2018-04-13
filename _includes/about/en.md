@@ -2,7 +2,7 @@
 >
 > Before you leave the world, everything is a process.
 
-Hey, I am *@Felix.ma*, a programmer, and more than https://felix-ma.github.io/, [Twitter] (https://twitter.com/mzc_continue), [Github] (http://github.com/felix-ma), and so on. The trick is still in development.
+Hey, I am *Felix.ma*, a programmer, and more than [Blog](https://felix-ma.github.io/),[Twitter](https://twitter.com/mzc_continue),[Github](http://github.com/felix-ma) , and so on. The trick is still in development.
 
 Having the heart of becoming a Daniel, but having no personal ability, we can only pick up shells with what is behind us. Why not open a blog now? This is not a disgrace?
 
