@@ -1,20 +1,11 @@
-> Yet another man.
+> Write code, do architecture.
+>
+> Before you leave the world, everything is a process.
 
-Hi, I am *@ms2008*, a software engineer. Messing with computers for over 10 years.
+Hey, I am *@Felix.ma*, a programmer, and more than https://felix-ma.github.io/, [Twitter] (https://twitter.com/mzc_continue), [Github] (http://github.com/felix-ma), and so on. The trick is still in development.
 
-This site's main purpose is to serve as the home of a slowly updating collection of technotes for my experience, primarily focused on Lua/OpenResty/Python/Golang/TCP_IP.
+Having the heart of becoming a Daniel, but having no personal ability, we can only pick up shells with what is behind us. Why not open a blog now? This is not a disgrace?
 
-The articles contained on this site is free, oriented toward experienced users who are interested in high-performance backend programming.
+It is said that Google wants to go to work, a technology blog, you can add Oh ~ (although I want more -_-)
 
-Feel free to email me with any comments, suggestions or bugs. I can't promise to always reply to every email (in fact I tend not to reply to many at all!) due to lack of free time but you can be assured I do read every one I receive.
-
-##### Wechat
-
-<div class="visible-md visible-lg">
-    <img src="/img/wechat-344.jpg" width="344" />
-    <small class="img-hint">Scanning on mobile</small>
-</div>
-<div class="visible-xs visible-sm">
-    <img src="/img/wechat-258.jpg" width="258" />
-    <small class="img-hint">Scanning on mobile</small>
-</div>
+However, no matter what, I do not want to go on such a mediocrity, I very much want to also very willing to share with you all what I have seen and heard in the process of tracing the footprints of the cow. I also hope to communicate with you and make progress together!
