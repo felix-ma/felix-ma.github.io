@@ -12,7 +12,7 @@ tags:
 
 # 控制台输出启动地址
 
-```java
+```
 public static void main(String[] args) throws UnknownHostException {
     SpringApplication app = new SpringApplication(XXXXXX.class);
     Environment env = app.run(args).getEnvironment();
