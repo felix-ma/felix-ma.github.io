@@ -1,6 +1,6 @@
 ---
 layout:		post
-title:		"SpringBoot项目配置"
+title:		"测试"
 subtitle:	"控制台输出启动地址"
 date:		2018-04-16
 author:		"felix"
