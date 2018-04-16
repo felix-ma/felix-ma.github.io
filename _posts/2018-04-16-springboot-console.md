@@ -7,8 +7,9 @@ author:     "felix"
 header-img: "img/in-post/post-bg-alitrip.jpg"
 catalog:    true
 tags:
-    - SpringBoot
-	- Spring
+    - 前端开发
+    - JavaScript
+    - PWA
 ---
 
 # 控制台输出启动地址
