@@ -4,7 +4,7 @@ title:      "SpringBoot项目启动提示"
 subtitle:   "项目启动后会在控制台输出访问信息"
 date:       2018-04-16
 author:     "felix"
-header-img: "img/in-post/post-bg-universe.jpg"
+header-img: "img/in-post/post-bg-alitrip.jpg"
 catalog:    true
 tags:
     - SpringBoot
