@@ -27,6 +27,7 @@ tags:
 ---
 ```
 # 异常模板
+```
 ---
 layout:     post
 title:      "SpringBoot项目配置"
@@ -39,5 +40,6 @@ tags:
 	- SpringBoot
 	- Spring
 ---
+```
 # 总结
 其实用眼睛是看不出来差别，主要是tab键和空格的识别问题。
