@@ -4,7 +4,7 @@ title:        "右侧catalog测试"
 subtitle:     "快速导航"
 date:         2018-04-14 00:40:00
 author:       "felix"
-header-img:   "img/post-bg-os-metro.jpg"
+header-img:   "img/in-post/post-bg-os-metro.jpg"
 catalog:      true
 multilingual: true
 tags:
