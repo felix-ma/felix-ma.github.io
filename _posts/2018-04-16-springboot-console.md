@@ -1,7 +1,7 @@
 ---
 layout:		post
 title:		"测试"
-subtitle:	"控制台输出启动地址"
+subtitle:	"个人测试博客发布"
 date:		2018-04-16
 author:		"felix"
 header-img:	"img/in-post/post-bg-universe.jpg"
