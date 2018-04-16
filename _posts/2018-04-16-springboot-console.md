@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "测试"
+title:      "SpringBoot项目启动提示"
 subtitle:   "个人测试博客发布"
 date:       2018-04-16
 author:     "felix"
