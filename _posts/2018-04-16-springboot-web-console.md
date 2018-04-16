@@ -1,15 +1,17 @@
 ---
-layout:     post
-title:      "SpringBoot项目配置"
-subtitle:   "SpringBoot项目运行后控制台输出启动地址"
-date:       2018-04-16
-author:     "felix"
-header-img: "img/in-post/post-bg-alitrip.jpg"
-catalog:    true
+layout:		post
+title:		"SpringBoot项目配置"
+subtitle:	"SpringBoot项目运行后控制台输出启动地址"
+date:		2018-04-16
+author:		"felix"
+header-img:	"img/in-post/post-bg-alitrip.jpg"
+catalog:	true
 tags:
 	- SpringBoot
 	- Spring
 ---
+
+SpringBoot项目运行后控制台输出启动地址
 
 # 控制台输出启动地址
 
