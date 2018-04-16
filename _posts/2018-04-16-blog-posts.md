@@ -5,7 +5,7 @@ subtitle:   "上传博客后主页无法显示标题"
 date:       2018-04-16 12:50:00
 author:     "felix"
 header-img: "img/in-post/post-bg-alitrip.jpg"
-catalog:    true
+catalog:    false
 tags:
     - Blog
     - Bug
