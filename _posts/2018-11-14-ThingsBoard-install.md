@@ -4,7 +4,7 @@ title:      "ThingsBoard部署安装"
 subtitle:   "大半夜写博客也是醉了，但是有位大佬说要写博客，真的很有用"
 date:       2018-11-14 23:38:21
 author:     "felix"
-header-img: "img/in-post/thingsboard/head.jpg"
+header-img: "img/in-post/thingsboard/head.png"
 catalog:    true
 tags:
     - ThingsBoard
