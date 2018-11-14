@@ -14,7 +14,7 @@ tags:
 ---
 # 下载
 
-## 准备环境
+**准备环境**
 
 官方文档已经很详细了，有Linux和Windows各种版本的。
 
@@ -28,7 +28,7 @@ tags:
 
 > ps：为什么用dos2unix 因为我源码编译是Windows机器，打包之后配置文件都是dos格式的，会有各种离奇的错误。。。。详见后面的博客
 
-## ThingsBoard
+**ThingsBoard**
 
 
 ```
@@ -38,7 +38,7 @@ find /usr/share/thingsboard/ | xargs dos2unix
 find /etc/thingsboard/ | xargs dos2unix
 ```
 
-## Tb-Gateway
+**Tb-Gateway**
 
 ```
 rpm -ivh tb-gateway.rpm
@@ -49,13 +49,13 @@ find /etc/tb-gateway/ | xargs dos2unix
 
 # 启动
 
-## ThingsBoard
+**ThingsBoard**
 
 ```
 service thingsboard start
 ```
 
-## Tb-Gateway
+**Tb-Gateway**
 
 ```
 service tb-gateway start
@@ -70,7 +70,7 @@ cp /etc/thingsboard/conf/thingsboard.yml ~
 cp /etc/tb-gateway/conf/tb-gateway.yml ~
 ```
 
-## ThingsBoard
+**ThingsBoard**
 
 ```
 service thingsboard stop
@@ -80,7 +80,7 @@ rm -rf /var/log/thingsboard/
 rm -rf /etc/thingsboard/
 ```
 
-## Tb-Gateway
+**Tb-Gateway**
 
 ```
 service tb-gateway stop
