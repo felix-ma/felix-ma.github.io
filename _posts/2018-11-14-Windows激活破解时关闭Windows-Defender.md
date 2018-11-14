@@ -4,7 +4,7 @@ title:      "Windows激活破解时关闭Windows Defender"
 subtitle:   "win10总是自动删除Windows和Office激活工具KMSELDI.exe，提示无法成功完成操作，因为文件包含病毒或潜在的垃圾软件"
 date:       2018-11-14 23:05:38
 author:     "felix"
-header-img: "img/in-post/menhera/1500x500.jpg"
+header-img: "img/in-post/post-bg-rwd.jpg"
 catalog:    false
 tags:
     - windows
