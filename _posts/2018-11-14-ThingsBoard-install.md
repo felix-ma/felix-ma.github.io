@@ -6,6 +6,7 @@ date:       2018-11-14 23:38:21
 author:     "felix"
 header-img: "img/in-post/thingsboard/head.png"
 catalog:    true
+multilingual: false
 tags:
     - ThingsBoard
     - IOT
