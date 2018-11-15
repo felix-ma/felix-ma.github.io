@@ -27,13 +27,13 @@ GitHub地址：https://github.com/felix-ma/thingsboard
 
 我是直接用IDEA打开项目目录的
 
-![1542286970350](../img/in-post/thingsboard/coding/1542286970350.png)
+![1542286970350](/img/in-post/thingsboard/coding/1542286970350.png)
 
 然后就是漫长的等待maven下载各种jar包。
 
 说实话不知道为什么，我总是感觉默认等idea下载jar包，那个maven老是卡死。大概就是这样子，会一直Resolving
 
-![1542287161470](../img/in-post/thingsboard/coding/1542287161470.png)
+![1542287161470](/img/in-post/thingsboard/coding/1542287161470.png)
 
 这种情况我都是直接关闭当前项目再次打开有可能就好了。
 
@@ -53,13 +53,13 @@ GitHub地址：https://github.com/felix-ma/thingsboard
 | dao         | 数据查询     |
 | ui          | 页面展示     |
 
-![1542287501299](../img/in-post/thingsboard/coding/1542287501299.png)
+![1542287501299](/img/in-post/thingsboard/coding/1542287501299.png)
 
 如果maven导入之后能区分出module，那么推荐单个module进行编译。
 
 1. 首先把ui编译了。这个最耗费时间。
 
-   ![1542287837462](../img/in-post/thingsboard/coding/1542287837462.png)
+   ![1542287837462](/img/in-post/thingsboard/coding/1542287837462.png)
 
 2. 然后把这个ui的jar包给引入maven仓库，注意修改版本号
 
@@ -69,7 +69,7 @@ GitHub地址：https://github.com/felix-ma/thingsboard
 
 3. 最后在整个项目中把ui这个module个删除了。
 
-   ![1542288022569](../img/in-post/thingsboard/coding/1542288022569.png)
+   ![1542288022569](/img/in-post/thingsboard/coding/1542288022569.png)
 
 有些jar包需要手动导入到maven仓库里面。就按照上面导入ui包的方式导入。
 
@@ -83,7 +83,7 @@ GitHub地址：https://github.com/felix-ma/thingsboard
 
 tb的配置文件在这里
 
-![1542288257942](../img/in-post/thingsboard/coding/1542288257942.png)
+![1542288257942](/img/in-post/thingsboard/coding/1542288257942.png)
 
 **需要修改的地方**
 
@@ -94,7 +94,7 @@ tb的配置文件在这里
 | security.jwt.refreshTokenExpTime | 改为  2592000                                                |
 | spring.data.sql                  | 数据库配置我改为了postgresql                                 |
 
-需要把HSQLDB的配置注释掉![1542288487139](../img/in-post/thingsboard/coding/1542288487139.png)
+需要把HSQLDB的配置注释掉![1542288487139](/img/in-post/thingsboard/coding/1542288487139.png)
 
 
 
@@ -141,7 +141,7 @@ sudo /usr/share/thingsboard/bin/install/install.sh --loadDemo
 
 其实配置文件只用改数据库就行，然后找到`ThingsboardServerApplication.java`
 
-![1542288924342](../img/in-post/thingsboard/coding/1542288924342.png)
+![1542288924342](/img/in-post/thingsboard/coding/1542288924342.png)
 
 选中main方法，运行！
 
@@ -162,7 +162,7 @@ sudo /usr/share/thingsboard/bin/install/install.sh --loadDemo
 
 然后访问页面 http://localhost:8080
 
-![1542289145476](../img/in-post/thingsboard/coding/1542289145476.png)
+![1542289145476](/img/in-post/thingsboard/coding/1542289145476.png)
 
 输入默认
 
@@ -174,10 +174,10 @@ sudo /usr/share/thingsboard/bin/install/install.sh --loadDemo
 
 管理员登录之后只有创建租户和一些简单的功能，如果需要使用具体功能需要创建租户，使用租户用户登录就行
 
-![1542289272992](../img/in-post/thingsboard/coding/1542289272992.png)
+![1542289272992](/img/in-post/thingsboard/coding/1542289272992.png)
 
 创建好租户之后，使用租户管理员登录是如下页面
 
-![1542289327736](../img/in-post/thingsboard/coding/1542289327736.png)
+![1542289327736](/img/in-post/thingsboard/coding/1542289327736.png)
 
 到这里，tb就可以用啦~
