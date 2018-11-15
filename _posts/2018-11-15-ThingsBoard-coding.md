@@ -4,7 +4,7 @@ title:      "ThingsBoard源码编译运行"
 subtitle:   "tb源码Java，用SpringBoot实现，理论上源码编译运行很简单，但是有时候会遇到一些很诡异的错误，记录一下"
 date:       2018-11-15 20:54:06
 author:     "felix"
-header-img: "img/in-post/thingsboard/coding/head.png"
+header-img: "img/in-post/thingsboard/head.png"
 catalog:    true
 multilingual: false
 tags:
