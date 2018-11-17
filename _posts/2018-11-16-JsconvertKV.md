@@ -222,3 +222,133 @@ function isJson(obj) {
 }
 ```
 
+# 修复Bug：如果是字符串则直接输出
+
+## json对象
+
+```
+{
+    "ip": [
+        "192.168.1.1",
+        "192.168.1.2",
+        "192.168.1.3",
+        "192.168.1.4"
+    ],
+    "a": {
+        "b": "2",
+        "c": [{
+            "d": 3
+        }, {
+            "e": 222
+        }]
+    }
+}
+```
+
+## 上一版本转换结果
+
+```
+{
+    "ip.0.0":"1",
+    "ip.0.1":"9",
+    "ip.0.2":"2",
+    "ip.0.3":".",
+    "ip.0.4":"1",
+    "ip.0.5":"6",
+    "ip.0.6":"8",
+    "ip.0.7":".",
+    "ip.0.8":"1",
+    "ip.0.9":".",
+    "ip.0.10":"1",
+    "ip.1.0":"1",
+    "ip.1.1":"9",
+    "ip.1.2":"2",
+    "ip.1.3":".",
+    "ip.1.4":"1",
+    "ip.1.5":"6",
+    "ip.1.6":"8",
+    "ip.1.7":".",
+    "ip.1.8":"1",
+    "ip.1.9":".",
+    "ip.1.10":"2",
+    "ip.2.0":"1",
+    "ip.2.1":"9",
+    "ip.2.2":"2",
+    "ip.2.3":".",
+    "ip.2.4":"1",
+    "ip.2.5":"6",
+    "ip.2.6":"8",
+    "ip.2.7":".",
+    "ip.2.8":"1",
+    "ip.2.9":".",
+    "ip.2.10":"3",
+    "ip.3.0":"1",
+    "ip.3.1":"9",
+    "ip.3.2":"2",
+    "ip.3.3":".",
+    "ip.3.4":"1",
+    "ip.3.5":"6",
+    "ip.3.6":"8",
+    "ip.3.7":".",
+    "ip.3.8":"1",
+    "ip.3.9":".",
+    "ip.3.10":"4",
+    "a.b":"2",
+    "a.c.0.d":3,
+    "a.c.1.e":222
+}
+```
+
+把字符串数组也进行递归解析了
+
+## 更新比对代码
+
+```
+function convertKV(jsonObj, parentKey, keyName, result) {
+    if (isJson(jsonObj) == 0) {
+        // 数组，取消分隔符
+        result[parentKey.substring(0, parentKey.length - 1)] = jsonObj;
+        return;
+    }
+    for (var key in jsonObj) {
+        var itemkey = key;
+        var val = jsonObj[itemkey];
+        // 对象
+        if (isJson(val) == 1) {
+            convertKV(val, parentKey + itemkey + ".", keyName, result);
+        }
+        // 对象数组
+        else if (isJson(val) == 2) {
+            for (var i = 0; i < val.length; i++) {
+                var valElement = val[i];
+                var item = i;
+                if (valElement[keyName]) {
+                    item = valElement[keyName];
+                }
+                convertKV(valElement, parentKey + itemkey + "." + item + ".", keyName, result);
+            }
+        }
+        // 值
+        else {
+            result[parentKey + itemkey] = val;
+        }
+    }
+}
+```
+
+##  结果
+
+```
+{
+    "ip.0":"192.168.1.1",
+    "ip.1":"192.168.1.2",
+    "ip.2":"192.168.1.3",
+    "ip.3":"192.168.1.4",
+    "a.b":"2",
+    "a.c.0.d":3,
+    "a.c.1.e":222
+}
+```
+
+
+
