@@ -23,7 +23,7 @@ GitHub地址：https://github.com/felix-ma/thingsboard
 
 # 导入工程
 
-直接以mavne工程导入IDEA中，获取直接open打开刚刚clone的文件夹
+直接以mavne工程导入IDEA中，或者直接open打开刚刚clone的文件夹
 
 我是直接用IDEA打开项目目录的
 
@@ -42,6 +42,112 @@ GitHub地址：https://github.com/felix-ma/thingsboard
 > 当然啦，一开始maven仓库这样执行肯定会报错的。然后就一个错误一个错误去解决
 
 # 项目编译遇到的问题
+
+### 1. Failed to execute goal org.fortasoft:gradle-maven-plugin:1.0.8
+
+ `Thingsboard HTTP Transport Service ................. FAILURE`
+
+```
+[ERROR] Failed to execute goal org.fortasoft:gradle-maven-plugin:1.0.8:invoke (default) on project http: org.gradle.tooling.BuildException: Could not execute build using Gradle distribution 'https://services.gradle.org/distributions/gradle-2.13-bin.zip'. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :http
+```
+
+点击查看这个网址是否可以正常下载。https://services.gradle.org/distributions/gradle-2.13-bin.zip
+
+如果没反应，翻墙尝试一下，并且在maven中配置代理
+
+```
+<proxies>
+    <proxy>
+      <id>xx</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>127.0.0.1</host>
+      <port>8087</port>
+      <nonProxyHosts>127.0.0.1</nonProxyHosts>
+    </proxy>
+  </proxies>
+```
+
+配置好之后继续执行，会下载这些之前无法下载的jar包
+
+```
+[INFO] Configure project :
+Download https://jcenter.bintray.com/com/netflix/nebula/gradle-ospackage-plugin/3.8.0/gradle-ospackage-plugin-3.8.0.jar[INFO] Download https://jcenter.bintray.com/com/netflix/nebula/gradle-ospackage-plugin/3.8.0/gradle-ospackage-plugin-3.8.0.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar[INFO] Download https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/redline-rpm/redline/1.2.2/redline-1.2.2.jar[INFO] Download https://jcenter.bintray.com/org/redline-rpm/redline/1.2.2/redline-1.2.2.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/vafer/jdeb/1.4/jdeb-1.4.jar[INFO] Download https://jcenter.bintray.com/org/vafer/jdeb/1.4/jdeb-1.4.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/com/bmuschko/gradle-docker-plugin/2.0.3/gradle-docker-plugin-2.0.3.jar[INFO] Download https://jcenter.bintray.com/com/bmuschko/gradle-docker-plugin/2.0.3/gradle-docker-plugin-2.0.3.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar[INFO] Download https://jcenter.bintray.com/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/commons-io/commons-io/2.4/commons-io-2.4.jar[INFO] Download https://jcenter.bintray.com/commons-io/commons-io/2.4/commons-io-2.4.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/apache/commons/commons-compress/1.8/commons-compress-1.8.jar[INFO] Download https://jcenter.bintray.com/org/apache/commons/commons-compress/1.8/commons-compress-1.8.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/apache/ant/ant/1.9.3/ant-1.9.3.jar[INFO] Download https://jcenter.bintray.com/org/apache/ant/ant/1.9.3/ant-1.9.3.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/apache/ant/ant-launcher/1.9.3/ant-launcher-1.9.3.jar[INFO] Download https://jcenter.bintray.com/org/apache/ant/ant-launcher/1.9.3/ant-launcher-1.9.3.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/bouncycastle/bcpg-jdk15on/1.51/bcpg-jdk15on-1.51.jar[INFO] Download https://jcenter.bintray.com/org/bouncycastle/bcpg-jdk15on/1.51/bcpg-jdk15on-1.51.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.51/bcprov-jdk15on-1.51.jar[INFO] Download https://jcenter.bintray.com/org/bouncycastle/bcprov-jdk15on/1.51/bcprov-jdk15on-1.51.jar
+
+[INFO] Configure project :
+Download https://jcenter.bintray.com/org/tukaani/xz/1.5/xz-1.5.jar[INFO] Download https://jcenter.bintray.com/org/tukaani/xz/1.5/xz-1.5.jar
+
+[INFO] Configure project :
+[INFO] Compiling script into cache
+[INFO] Compiling script into cache
+[INFO] Compiling script into cache
+[INFO] Configure project :
+[INFO] Configure projects
+[INFO] Initialize build
+[INFO] Build
+[INFO] Execute tasks
+:assemble[INFO] Execute :assemble
+ UP-TO-DATE
+[INFO] Execute tasks
+:check[INFO] Execute :check
+ UP-TO-DATE
+[INFO] Execute tasks
+:build[INFO] Execute :build
+ UP-TO-DATE
+[INFO] Execute tasks
+:buildDeb[INFO] Execute :buildDeb
+
+[INFO] Execute tasks
+:buildRpm[INFO] Execute :buildRpm
+
+[INFO] Execute tasks
+
+BUILD SUCCESSFUL
+```
+
+
 
 如果正常编译好之后项目一共有这几个module
 
