@@ -147,7 +147,25 @@ Download https://jcenter.bintray.com/org/tukaani/xz/1.5/xz-1.5.jar[INFO] Downloa
 BUILD SUCCESSFUL
 ```
 
+### 2. 项目启动后页面打不开
 
+![ErrorPage](/img/in-post/thingsboard/coding/ErrorPage.png) 
+
+把ui-2.2.0-SNAPSHOT.jar的jar包导入maven仓库中。目录在ui/target/ui-2.2.0-SNAPSHOT.jar
+
+```
+mvn install:install-file -DgroupId=org.thingsboard -DartifactId=ui -Dversion=2.2.0-SNAPSHOT -Dpackaging=jar -Dfile=ui/target/ui-2.2.0-SNAPSHOT.jar
+```
+
+导入之后查看maven仓库里面到底有没有这个jar包
+
+![1542444685015](/img/in-post/thingsboard/coding/1542444685015.png)
+
+#### 可以[加入QQ群][1]中下载最新tb（2.2.0-SNAPSHOT）源码jar包，导入自己maven仓库即可
+
+[1]: https://jq.qq.com/?_wv=1027&amp;k=5K8kWtb	"加入QQ群"
+
+### 3. 其他杂项
 
 如果正常编译好之后项目一共有这几个module
 
