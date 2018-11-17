@@ -43,7 +43,7 @@ https://thingsboard.io/docs/user-guide/rule-engine-2-0/re-getting-started/
 
 在ThingsBoard中的json解析器中判断了传入的值是否是key:value格式。
 
-![1542453888775](img\in-post\thingsboard\ruleengine\1542453888775.png)
+![1542453888775](/img/in-post/thingsboard/ruleengine/1542453888775.png)
 
 如果不是则数据无法存储，所以需要进行转换。
 
@@ -55,7 +55,7 @@ https://thingsboard.io/docs/user-guide/rule-engine-2-0/re-getting-started/
 
 总览图
 
-![1542454061831](img\in-post\thingsboard\ruleengine\1542454061831.png)
+![1542454061831](/img/in-post/thingsboard/ruleengine/1542454061831.png)
 
 规则链js
 
@@ -143,9 +143,9 @@ function isJson(obj) {
 }
 ```
 
-![1542454723554](img\in-post\thingsboard\ruleengine\1542454723554.png)
+![1542454723554](/img/in-post/thingsboard/ruleengine/1542454723554.png)
 
 导出的Root Rule Chain，[点击查看][2]
 
-[2]: img\in-post\thingsboard\ruleengine\root_rule_chain.json	"完整的Rule Chain"
+[2]: /img/in-post/thingsboard/ruleengine/root_rule_chain.json	"完整的Rule Chain"
 
