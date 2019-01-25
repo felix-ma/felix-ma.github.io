@@ -104,5 +104,4 @@ SpringBoot 版本 2.0.3
     }
     ```
 ## github代码
-[1]
-[1]: https://github.com/felix-ma/SpringBoot-Multiple-DataSources	"SpringBoot-Multiple-DataSources"
+[SpringBoot-Multiple-DataSources](https://github.com/felix-ma/SpringBoot-Multiple-DataSources)
