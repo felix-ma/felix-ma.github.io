@@ -15,7 +15,6 @@ tags:
 ---
 
 # JWT Spring Security Demo
-![](/img/in-post/menhera/1.jpg)
 ![Screenshot from running application](/img/in-post/jwt-springsecurity/screenshot-security-jwt-demo.png "Screenshot JWT Spring Security Demo")
 
 ## About
