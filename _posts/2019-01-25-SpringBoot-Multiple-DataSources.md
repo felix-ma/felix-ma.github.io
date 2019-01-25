@@ -78,12 +78,9 @@ SpringBoot 版本 2.0.3
         return DruidDataSourceBuilder.create().build();
     }
     ```
-3. 添加到`multipleDataSource`中
+3. 添加到`multipleDataSource`中   
+
     ```java
-    /**
-     * 动态数据源配置
-     * @return
-     */
     @Bean
     @Primary
     public DataSource multipleDataSource(@Qualifier("db1") DataSource db1, @Qualifier("db2") DataSource db2) {
@@ -107,4 +104,5 @@ SpringBoot 版本 2.0.3
     }
     ```
 ## github代码
-https://github.com/felix-ma/SpringBoot-Multiple-DataSources
+[1]
+[1]: https://github.com/felix-ma/SpringBoot-Multiple-DataSources	"SpringBoot-Multiple-DataSources"
